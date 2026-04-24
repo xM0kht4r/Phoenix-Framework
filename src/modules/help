@@ -1,0 +1,69 @@
+
+Command				Description
+-------				-----------
+	
+/hello				Check connectivity
+/help				Print help message
+/sleep				Sleep. Usage: /sleep <seconds>
+/exit				End the session
+/reboot				Reboot the host
+/shutdown			Shutdown the host
+
+/pwd				Print working directory
+/dir 				List working directory
+/cd 				Change directory. Usage: /cd <path>
+/search 			Search for files. Usage: /search <path> <file>
+/upload 			Upload files. Usage: /upload <file>, /upload *.jpg
+
+/sysinfo 			Print system informations
+/ps 				List running processes
+/hw 				List installed hardware
+/sw 				list installed software
+/drv				List connected drives
+/net				List network Adapters
+
+/pkill				Kill process by PID
+
+/webcam_snap		Take a webcam snapshot
+/webcam_list 		List available webcams
+
+/keylog				Log keystrokes. Usage: /keylog
+
+/screenshot 		Take a screenshot
+/stream_desktop 	Live stream the host desktop
+/stream_webcam		Live stream the host webcam
+/keylog
+
+
+/clipboard 			Dump clipboard data
+/history			Dump browser history
+/passdump			Dump browser credentials ****
+/hashdump			Dump host hashes ****
+/samdump
+/hivdump
+
+
+/uid 				Get user ID
+/users 				List the available users
+/getprivs			Get privileges
+/getsystem			Elevate to SYSTEM ***
+/bypassuac
+
+
+
+/chat GUI interaction with the user 
+
+
+/play audio/vid			*********
+
+/recaudio			Record audio. Usage: /recaudio <seconds> ****
+/wallpaper 			/wall <URL|Path> **********
+
+/explorer 			*****************
+
+/inject			/load <dll_url | shellcode >
+/mimikatz 		**************
+
+
+/service
+
